@@ -11,7 +11,7 @@ import com.crm.generic.ObjectRepository.HomePage;
 import com.crm.generic.fileutility.ExcelUtility;
 import com.crm.generic.listenerimplements.ListenerImplementation;
 import com.crm.generic.webdriverutility.Webdriverutility;
-@Listeners(com.crm.generic.listenerimplements.ListenerImplementation.class)
+ //@Listeners(com.crm.generic.listenerimplements.ListenerImplementation.class)
 public class TC04_CreateContactTest extends BaseClass
 {
 	@Test(groups = "smoke")
@@ -21,12 +21,12 @@ public class TC04_CreateContactTest extends BaseClass
 		//click on Contact Link in home page
 		HomePage homepg=new HomePage(driver);
 		homepg.getcontactlink().click();
-		ListenerImplementation.test.log(Status.PASS, "Clicked Contact link in Header");
+		//ListenerImplementation.test.log(Status.PASS, "Clicked Contact link in Header");
 
 		//Click on Create Contaact Logo in Contact page
 		ContactPage contactpg=new ContactPage(driver);
 		contactpg.getCreatecontactlogo().click();
-		ListenerImplementation.test.log(Status.PASS, "Clicked Create Contactlogo link in Header");
+		//ListenerImplementation.test.log(Status.PASS, "Clicked Create Contactlogo link in Header");
 
 		//Enter the Conatct name in last Name Textfield
 		ExcelUtility excel=new ExcelUtility();
@@ -39,11 +39,11 @@ public class TC04_CreateContactTest extends BaseClass
 		//Enter  the Contact Name in Text field 
 		ContactInformationPage contactInfoPg=new ContactInformationPage(driver);
 		contactInfoPg.getlastnameTF().sendKeys(contactname);
-		ListenerImplementation.test.log(Status.PASS, "Entered Contact lastname ");
+		//ListenerImplementation.test.log(Status.PASS, "Entered Contact lastname ");
 
 		//Click on Save Button
 		contactInfoPg.getsaveButton().click();
-		ListenerImplementation.test.log(Status.PASS, "Clicked Save Button ");
+		//ListenerImplementation.test.log(Status.PASS, "Clicked Save Button ");
 		
 		//Verify
 		String namee = contactInfoPg.getcontactname().getText();

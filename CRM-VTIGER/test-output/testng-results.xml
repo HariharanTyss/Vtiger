@@ -1,36 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-07T12:54:57 IST" name="Default suite" finished-at="2023-09-07T12:55:52 IST" duration-ms="54988">
+  <suite started-at="2023-09-07T15:17:17 IST" name="Suite" finished-at="2023-09-07T15:19:11 IST" duration-ms="114575">
     <groups>
       <group name="smoke">
-        <method signature="TC05_CreateContactwithInformationTest.createContactwithInformation()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" name="createContactwithInformation" class="com.crm.contacttest.TC05_CreateContactwithInformationTest"/>
+        <method signature="TC04_CreateContactTest.createContact()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" name="createContact" class="com.crm.contacttest.TC04_CreateContactTest"/>
+        <method signature="TC05_CreateContactwithInformationTest.createContactwithInformation()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" name="createContactwithInformation" class="com.crm.contacttest.TC05_CreateContactwithInformationTest"/>
+        <method signature="TC06_CreateConatactWithphonenoTest.createContactwithPhone()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" name="createContactwithPhone" class="com.crm.contacttest.TC06_CreateConatactWithphonenoTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-09-07T12:54:57 IST" name="Default test" finished-at="2023-09-07T12:55:52 IST" duration-ms="54988">
-      <class name="com.crm.contacttest.TC05_CreateContactwithInformationTest">
-        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" started-at="2023-09-07T12:54:57 IST" name="browserSetup" finished-at="2023-09-07T12:55:06 IST" duration-ms="8032" status="PASS">
+    <test started-at="2023-09-07T15:17:17 IST" name="Test1" finished-at="2023-09-07T15:18:14 IST" duration-ms="57712">
+      <class name="com.crm.orgtest.TC01_CreateOrganisationTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.orgtest.TC01_CreateOrganisationTest@5656be13]" started-at="2023-09-07T15:17:17 IST" name="browserSetup" finished-at="2023-09-07T15:17:26 IST" duration-ms="9110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" started-at="2023-09-07T12:55:06 IST" name="login" finished-at="2023-09-07T12:55:14 IST" duration-ms="8249" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.orgtest.TC01_CreateOrganisationTest@5656be13]" started-at="2023-09-07T15:17:26 IST" name="login" finished-at="2023-09-07T15:17:36 IST" duration-ms="9751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="createContactwithInformation()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" started-at="2023-09-07T12:55:14 IST" name="createContactwithInformation" finished-at="2023-09-07T12:55:47 IST" duration-ms="33022" status="PASS">
+        <test-method signature="createorganisation()[pri:0, instance:com.crm.orgtest.TC01_CreateOrganisationTest@5656be13]" started-at="2023-09-07T15:17:36 IST" name="createorganisation" finished-at="2023-09-07T15:18:09 IST" duration-ms="33468" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContactwithInformation -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" started-at="2023-09-07T12:55:47 IST" name="logout" finished-at="2023-09-07T12:55:51 IST" duration-ms="4508" status="PASS">
+        </test-method> <!-- createorganisation -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.orgtest.TC01_CreateOrganisationTest@5656be13]" started-at="2023-09-07T15:18:09 IST" name="logout" finished-at="2023-09-07T15:18:13 IST" duration-ms="4189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@235834f2]" started-at="2023-09-07T12:55:51 IST" name="closeBrowser" finished-at="2023-09-07T12:55:52 IST" duration-ms="980" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.orgtest.TC01_CreateOrganisationTest@5656be13]" started-at="2023-09-07T15:18:13 IST" name="closeBrowser" finished-at="2023-09-07T15:18:14 IST" duration-ms="854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.orgtest.TC01_CreateOrganisationTest -->
+      <class name="com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest@59474f18]" started-at="2023-09-07T15:17:17 IST" name="browserSetup" finished-at="2023-09-07T15:17:26 IST" duration-ms="9157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest@59474f18]" started-at="2023-09-07T15:17:26 IST" name="login" finished-at="2023-09-07T15:17:36 IST" duration-ms="9643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgUsingPhonno()[pri:0, instance:com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest@59474f18]" started-at="2023-09-07T15:17:36 IST" name="createOrgUsingPhonno" finished-at="2023-09-07T15:18:09 IST" duration-ms="33452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgUsingPhonno -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest@59474f18]" started-at="2023-09-07T15:18:09 IST" name="logout" finished-at="2023-09-07T15:18:13 IST" duration-ms="4459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest@59474f18]" started-at="2023-09-07T15:18:13 IST" name="closeBrowser" finished-at="2023-09-07T15:18:14 IST" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.orgtest.TC03_CreateOrganizationUsingPhonenumberTest -->
+      <class name="com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest@34123d65]" started-at="2023-09-07T15:17:17 IST" name="browserSetup" finished-at="2023-09-07T15:17:26 IST" duration-ms="8819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest@34123d65]" started-at="2023-09-07T15:17:26 IST" name="login" finished-at="2023-09-07T15:17:35 IST" duration-ms="9674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createOrgwithIndustry()[pri:0, instance:com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest@34123d65]" started-at="2023-09-07T15:17:35 IST" name="createOrgwithIndustry" finished-at="2023-09-07T15:18:10 IST" duration-ms="34410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrgwithIndustry -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest@34123d65]" started-at="2023-09-07T15:18:10 IST" name="logout" finished-at="2023-09-07T15:18:14 IST" duration-ms="4121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest@34123d65]" started-at="2023-09-07T15:18:14 IST" name="closeBrowser" finished-at="2023-09-07T15:18:14 IST" duration-ms="531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.orgtest.TC02_CreateOrganizationwithIndustryTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-09-07T15:18:14 IST" name="Test2" finished-at="2023-09-07T15:19:11 IST" duration-ms="56814">
+      <class name="com.crm.contacttest.TC04_CreateContactTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" started-at="2023-09-07T15:18:14 IST" name="browserSetup" finished-at="2023-09-07T15:18:21 IST" duration-ms="6971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" started-at="2023-09-07T15:18:21 IST" name="login" finished-at="2023-09-07T15:18:31 IST" duration-ms="9834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createContact()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" started-at="2023-09-07T15:18:31 IST" name="createContact" finished-at="2023-09-07T15:19:02 IST" duration-ms="31197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" started-at="2023-09-07T15:19:02 IST" name="logout" finished-at="2023-09-07T15:19:07 IST" duration-ms="4769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacttest.TC04_CreateContactTest@5aa9e4eb]" started-at="2023-09-07T15:19:07 IST" name="closeBrowser" finished-at="2023-09-07T15:19:08 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.contacttest.TC04_CreateContactTest -->
+      <class name="com.crm.contacttest.TC06_CreateConatactWithphonenoTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" started-at="2023-09-07T15:18:14 IST" name="browserSetup" finished-at="2023-09-07T15:18:21 IST" duration-ms="6808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" started-at="2023-09-07T15:18:21 IST" name="login" finished-at="2023-09-07T15:18:31 IST" duration-ms="10044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createContactwithPhone()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" started-at="2023-09-07T15:18:31 IST" name="createContactwithPhone" finished-at="2023-09-07T15:19:06 IST" duration-ms="34840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithPhone -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" started-at="2023-09-07T15:19:06 IST" name="logout" finished-at="2023-09-07T15:19:11 IST" duration-ms="4595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacttest.TC06_CreateConatactWithphonenoTest@385c9627]" started-at="2023-09-07T15:19:11 IST" name="closeBrowser" finished-at="2023-09-07T15:19:11 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.crm.contacttest.TC06_CreateConatactWithphonenoTest -->
+      <class name="com.crm.contacttest.TC05_CreateContactwithInformationTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" started-at="2023-09-07T15:18:14 IST" name="browserSetup" finished-at="2023-09-07T15:18:21 IST" duration-ms="6728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" started-at="2023-09-07T15:18:21 IST" name="login" finished-at="2023-09-07T15:18:30 IST" duration-ms="9140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="createContactwithInformation()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" started-at="2023-09-07T15:18:30 IST" name="createContactwithInformation" finished-at="2023-09-07T15:19:01 IST" duration-ms="30268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContactwithInformation -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" started-at="2023-09-07T15:19:01 IST" name="logout" finished-at="2023-09-07T15:19:05 IST" duration-ms="4766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.crm.contacttest.TC05_CreateContactwithInformationTest@6989da5e]" started-at="2023-09-07T15:19:05 IST" name="closeBrowser" finished-at="2023-09-07T15:19:06 IST" duration-ms="601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.crm.contacttest.TC05_CreateContactwithInformationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>

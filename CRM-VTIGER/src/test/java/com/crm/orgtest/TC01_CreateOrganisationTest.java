@@ -11,14 +11,14 @@ public class TC01_CreateOrganisationTest extends BaseClass
 {
 	@Test
 	public void createorganisation() throws Throwable {
-		
+
 		wdu.waitForPageToLoad(driver);
 		String accname = exu.getDataFromExcelFile("Organisation", 1, 3);
 		int randomno=jau.getrandomnumber();
 		String accountname = accname+randomno;
-		
+
 		//String accountname = "Qsp1875";
-		
+
 		//Entering into Homepage
 		HomePage homepg=new HomePage(driver);
 
@@ -35,10 +35,10 @@ public class TC01_CreateOrganisationTest extends BaseClass
 		//Enter the Organisation Name
 		orginfopg.getaccountnameTF().sendKeys(accountname);
 
-		
+
 		//click on Save Button
 		orginfopg.getsaveButton().click();
-		
+
 		//verify the organisation Name is take or not
 		try {
 			boolean orgname = orginfopg.getorganisationname().isDisplayed();
@@ -50,6 +50,6 @@ public class TC01_CreateOrganisationTest extends BaseClass
 		catch (Exception e) {
 			driver.switchTo().alert().accept();
 			System.out.println("Organisation Not created/Organization Name Already Exists!");
+		}
 	}
 }
-	}
